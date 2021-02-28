@@ -3,9 +3,9 @@
 ## Installation
 Install lastest version of Python at https://www.python.org/downloads/ 
 
-Create a directory for the project in your File Explorer 
+Create a directory for the project in your File Explorer. 
 
-In command prompt, navigate to the directory you just created (using cd command)
+In command prompt, navigate to the directory you just created (using cd command).
 
 Create python virtual environment by typing:
 ```bash
