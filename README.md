@@ -22,7 +22,7 @@ Install django:
 pip install django
 ```
 
-## Running The WebPage 
+## Running The Web Page 
 Navigate into the directory for the project on the command line.
 
 Run the server:
