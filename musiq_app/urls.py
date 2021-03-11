@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from musiq.views import homepage 
+from musiq.views import Question2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homepage)
+    path('question2', Question2)
 ]
