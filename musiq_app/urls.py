@@ -27,10 +27,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homepage)
 
-    path('question1', question1)
-    path('question4', question4)
-    path('question5', question5)
-    path('question2', Question2)
+    path('question1/', question1)
+    path('question4/', question4)
+    path('question5/', question5)
+    path('question2/', Question2)
 
     path('question3/',question3)
 ]

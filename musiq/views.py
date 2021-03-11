@@ -13,7 +13,8 @@ def question4(request):
 
 def question5(request):
     return render(request, 'musiq/question5.html')
-def Question2(request);
+    
+def Question2(request):
     return render(request, 'musiq/question2.html')
 
     
