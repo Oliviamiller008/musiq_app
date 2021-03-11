@@ -6,3 +6,9 @@ def homepage(request):
 
 def question1(request):
     return render(request, 'musiq/question1.html')
+
+def question4(request):
+    return render(request, 'musiq/question4.html')
+
+def question5(request):
+    return render(request, 'musiq/question5.html')
