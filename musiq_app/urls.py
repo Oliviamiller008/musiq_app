@@ -16,10 +16,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from musiq.views import homepage 
+<<<<<<< Updated upstream
 from musiq.views import Question2
+=======
+from musiq.views import question3
+>>>>>>> Stashed changes
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homepage)
+<<<<<<< Updated upstream
     path('question2', Question2)
+=======
+    path('question3/',question3)
+>>>>>>> Stashed changes
 ]
