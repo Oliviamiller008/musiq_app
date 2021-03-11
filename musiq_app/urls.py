@@ -16,21 +16,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from musiq.views import homepage 
-
 from musiq.views import question1
+from musiq.views import question2
+from musiq.views import question3 
 from musiq.views import question4
 from musiq.views import question5
-from musiq.views import Question2
-from musiq.views import question3
+from musiq.views import endingpage 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', homepage)
-
-    path('question1/', question1)
-    path('question4/', question4)
-    path('question5/', question5)
-    path('question2/', Question2)
-
-    path('question3/',question3)
+    path('', homepage),
+    path('question1/', question1),
+    path('question2/', question2),
+    path('question3/',question3),
+    path('question4/', question4),
+    path('question5/', question5),
+    path('endingpage/', endingpage)
 ]
