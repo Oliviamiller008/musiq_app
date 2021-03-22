@@ -32,6 +32,27 @@ py manage.py runserver
 
 Copy and paste the address that is returned into a web browser.
 
+## Running the MySql database on local server
+Note: MySQL database will be updated/changed using python only - no real need to access MySQL database tables unless curious.
+
+Run the server:
+```bash
+py manage.py runserver
+```
+
+Install Xampp: https://www.apachefriends.org/download.html 
+
+Run Xampp Control Panel:
+- Start Apache & MySQL
+- Click on Admin of MySQL Service
+
+Run these two commands server:
+```bash 
+py manage.py migrate
+py manage.py runserver
+```
+Reference for any help: https://data-flair.training/blogs/django-database/
+
 
 
 
