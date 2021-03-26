@@ -2,10 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\musiq",
+    "\\musiq\\migrations",
     "\\musiq\\templates",
     "\\musiq\\templates\\musiq",
     "\\musiq_app"
   ],
-  "SelectedNode": "\\musiq\\templates\\musiq\\homepage.html",
+  "SelectedNode": "\\musiq_app\\settings.py",
   "PreviewInSolutionExplorer": false
 }
