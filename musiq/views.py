@@ -1,5 +1,5 @@
 from django.shortcuts import render #used to render html templates
-from musiq.models import Quiz
+#from musiq.models import Quiz
 
 # Create your views here.
 def homepage(request):
@@ -23,7 +23,7 @@ def question5(request):
 def endingpage(request):
     return render(request, 'musiq/endingpage.html')
 
-def musiqQuiz(request):
-    results=Quiz.objects.all()
-    return render(request, 'Question1.html', {"Quiz":results}) #be able to reference chosen results from quiz
+#def musiqQuiz(request):
+ #   results=Quiz.objects.all()
+ #   return render(request, 'Question1.html', {"Quiz":results}) #be able to reference chosen results from quiz
 
