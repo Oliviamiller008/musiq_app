@@ -10,6 +10,7 @@
  
 </head>
 
+<form method = "POST">
 <body>
 
     <center>
@@ -21,6 +22,9 @@
               <img src="question1/paris.jpg" alt="paris" >
             <div class="card-action">
               <a href="">It's great to be alive</a>
+              <label>
+              <input type = "radio" name= "QUESTION1_CHOICES" value = "q1_op1"/>
+              </label>
             </div>
         </div>
 
@@ -48,12 +52,19 @@
         </div>
     </div>
 
-<center>
-    <button type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2"> 
-        <a href="{% url 'question2' %}"> Next Question</a>
-    </button>
 
-</center>
+    <center>
+      <button type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2"> 
+          <input type = "submit" name = "submit_button">
+          <a href="{% url 'question2' %}"> Next Question</a>
+      
+      </button>
+  
+  </center>
+    
+</form>
+
+
   
 
     
