@@ -15,9 +15,8 @@ def login(request):
     return HttpResponse(status =200)
 
 def question1(request):
-    create_playlist() 
-
-    if request.method = 'POST':
+   
+    if request.method == 'POST':
         if 'submit_button' in request.form:
             user_answer = request.form['QUESTION1_CHOICES']
         

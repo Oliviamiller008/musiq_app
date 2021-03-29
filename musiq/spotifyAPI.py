@@ -30,9 +30,9 @@ def create_playlist():
     return playlist_id
  
 #adds a song to the created playlist 
-def add_song(playlist_id, track_id):
-    user_id = sp.me()['id']
-    sp.user_playlist_add_tracks(user=user_id, playlist_id, tracks, position=None)
+#def add_song(playlist_id, track_id):
+   # user_id = sp.me()['id']
+    #sp.user_playlist_add_tracks(user=user_id, playlist_id, tracks, position=None)
 
 
 
