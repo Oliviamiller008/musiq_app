@@ -1,5 +1,9 @@
 # musiq_app
 
+## Background
+
+This is an app in which a user answers several multiple choice questions based on personality and current mood, and the outcome will produce a unique Spotify playlist based on their answers. The user will be able to view the 10 songs on their playlist and listen to their new playlist via the Spotify app. Different answers produce different playlists. Enjoy and listen on!
+
 ## Installation
 Install lastest version of Python at https://www.python.org/downloads/ 
 

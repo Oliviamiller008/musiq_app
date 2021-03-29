@@ -10,24 +10,28 @@
  
 </head>
 
+<form method = "POST">
 <body>
 
     <center>
-        <h1> Question 1</h1>
+        <h1> Question 1: Which phrase best describes how you feel today? </h1>
     </center>
 
     <div class="row">
         <div class="col s6 card card-image">
-              <img src="paris.jpg" alt="paris">
+              <img src="question1/paris.jpg" alt="paris" >
             <div class="card-action">
-              <a href="">Option 1</a>
+              <a href="">It's great to be alive</a>
+              <label>
+              <input type = "radio" name= "QUESTION1_CHOICES" value = "q1_op1"/>
+              </label>
             </div>
         </div>
 
         <div class="col s6 card card-image">
             <img src="paris.jpg" alt="paris">
           <div class="card-action">
-            <a href="">Option 2</a>
+            <a href="">Today I swear I'm not doing anything</a>
           </div>
         </div>
     </div>
@@ -36,24 +40,31 @@
         <div class="col s6 card card-image">
               <img src="paris.jpg" alt="paris">
             <div class="card-action">
-              <a href="">Option 3</a>
+              <a href="">I'm over this</a>
             </div>
         </div>
 
         <div class="col s6 card card-image">
             <img src="paris.jpg" alt="paris">
           <div class="card-action">
-            <a href="">Option 4</a>
+            <a href="">I can't wait to see them</a>
           </div>
         </div>
     </div>
 
-<center>
-    <button type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2"> 
-        <a href="{% url 'question2' %}"> Next Question</a>
-    </button>
 
-</center>
+    <center>
+      <button type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2"> 
+          <input type = "submit" name = "submit_button">
+          <a href="{% url 'question2' %}"> Next Question</a>
+      
+      </button>
+  
+  </center>
+    
+</form>
+
+
   
 
     
