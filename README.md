@@ -26,6 +26,11 @@ Install django:
 pip install django
 ```
 
+Install Spotipy Package:
+```bash
+pip install spotipy
+```
+
 ## Running The Web Page 
 Navigate into the directory for the project on the command line.
 
