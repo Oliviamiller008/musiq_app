@@ -10,7 +10,10 @@
  
 </head>
 
-<form method = "POST">
+</form>
+      
+<form action = "#" method = "POST">
+
 <body>
 
     <center>
@@ -19,55 +22,86 @@
 
     <div class="row">
         <div class="col s6 card card-image">
-              <img src="question1/paris.jpg" alt="paris" >
+              <img src="musiq\images\paris.jpg" alt="paris" >
             <div class="card-action">
-              <a href="">It's great to be alive</a>
-              <label>
-              <input type = "radio" name= "QUESTION1_CHOICES" value = "q1_op1"/>
-              </label>
+              <p>
+                <label>
+                  <input name="group1" type="radio" value="q1op1" required>
+                  <span>It's great to be alive</span>
+                </label>
+              </p>
+
+              <!--<input type = "radio" id= "q1op1" name= "QUESTION1_CHOICES" value = "q1op1">
+              <label for= "q1op1">It's great to be alive</label><br>-->
             </div>
         </div>
 
         <div class="col s6 card card-image">
             <img src="paris.jpg" alt="paris">
           <div class="card-action">
-            <a href="">Today I swear I'm not doing anything</a>
+            <!--<a href="">Today I swear I'm not doing anything</a>-->
+
+            <p>
+              <label>
+                <input name="group1" type="radio" value="q1op2">
+                <span>Today I swear I'm not doing anything</span>
+              </label>
+            </p>
+
+            <!--<input type = "radio" id= "q1op2" name= "QUESTION1_CHOICES" value = "q1op2">
+            <label for= "q1op2">Today I swear I'm not doing anything</label><br>-->
           </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col s6 card card-image">
-              <img src="paris.jpg" alt="paris">
+              <img src="images/paris.jpg" alt="paris" width="600" height ="300">
             <div class="card-action">
-              <a href="">I'm over this</a>
+
+              <p>
+                <label>
+                  <input name="group1" type="radio" value="q1op3">
+                  <span>I'm over this</span>
+                </label>
+              </p>
+
+              <!--<a href="">I'm over this</a>
+              <input type = "radio" id= "q1op3" name= "QUESTION1_CHOICES" value = "q1op3">
+              <label for= "q1op3">I'm over this</label><br>-->
             </div>
         </div>
 
         <div class="col s6 card card-image">
             <img src="paris.jpg" alt="paris">
-          <div class="card-action">
-            <a href="">I can't wait to see them</a>
+            <div class="card-action">
+
+              <p>
+                <label>
+                  <input name="group1" type="radio" value="q1op4">
+                  <span>I can't wait to see my friends</span>
+                </label>
+              </p>
+
+              <!--<a href="">I can't wait to see my friends</a>
+              <input type = "radio" id= "q1op4" name= "QUESTION1_CHOICES" value = "q1op4">
+              <label for= "q1op4">I can't wait to see my friends</label><br>-->
           </div>
         </div>
     </div>
 
+  </form>
 
     <center>
+
       <button type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2"> 
-          <input type = "submit" name = "submit_button">
+          <!--<input type = "submit" name = "submit_button">-->
           <a href="{% url 'question2' %}"> Next Question</a>
       
       </button>
   
   </center>
-    
-</form>
 
-
-  
-
-    
     
 </body>
 </html>
