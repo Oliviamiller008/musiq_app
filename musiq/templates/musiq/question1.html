@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link href='https://fonts.googleapis.com/css?family=GFS Didot' rel='stylesheet'>
 <head>
     <title>Question 1</title>
 
@@ -7,7 +8,8 @@
      
      <!-- Compiled and minified JavaScript -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
- 
+     <style type="text/css">
+  </style>
 </head>
 
 </form>
@@ -17,12 +19,18 @@
 <body>
 
     <center>
-        <h1> Question 1: Which phrase best describes how you feel today? </h1>
+        <h1 style ="font-family:didot;font-size:42px;font-style:normal;font-weight: bold; color: rgb(170, 200, 207);
+        text-shadow: #000 1px 1px 1px; -webkit-font-smoothing: antialiased;" >Question 1: Which phrase best describes how you feel today? 
+        
+      </h1>
+        
     </center>
 
     <div class="row">
-        <div class="col s6 card card-image">
-              <img src="musiq\images\paris.jpg" alt="paris" >
+        <div class="col s4 offset-s2 card card-image" >
+          <center>
+              <img src="https://miro.medium.com/max/4812/1*xR-TSoQF-BEaXF3hXyXn5Q.jpeg" width="300" height= "300">
+            </center>
             <div class="card-action">
               <p>
                 <label>
@@ -36,8 +44,11 @@
             </div>
         </div>
 
-        <div class="col s6 card card-image">
-            <img src="paris.jpg" alt="paris">
+        <div class="col s4 card card-image">
+          <center>
+            <img src="https://i.pinimg.com/originals/1f/3f/2b/1f3f2b978bdeb65a9e3f4275482ad80c.jpg" width="300" height= "300">
+          </center>
+            <!--<img src="paris.jpg" alt="paris">-->
           <div class="card-action">
             <!--<a href="">Today I swear I'm not doing anything</a>-->
 
@@ -55,8 +66,11 @@
     </div>
 
     <div class="row">
-        <div class="col s6 card card-image">
-              <img src="images/paris.jpg" alt="paris" width="600" height ="300">
+        <div class="col s4 offset-s2 card card-image">
+          <center>
+            <img src="https://cdn.someecards.com/someecards/usercards/just-call-me-a-bridge-cause-im-over-it-795d2.png" width="300" height= "300">
+          </center>
+               <!--<<img src="images/paris.jpg" alt="paris" width="1000" height ="500">-->
             <div class="card-action">
 
               <p>
@@ -72,8 +86,11 @@
             </div>
         </div>
 
-        <div class="col s6 card card-image">
-            <img src="paris.jpg" alt="paris">
+        <div class="col s4 card card-image">
+          <center>
+            <img src="https://www.detoxcentercolorado.com/wp-content/uploads/2020/02/AdobeStock_273862456.jpeg" width="300" height= "300">
+          </center>
+            <!--<img src="paris.jpg" alt="paris">-->
             <div class="card-action">
 
               <p>
@@ -94,7 +111,7 @@
 
     <center>
 
-      <button type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2"> 
+      <button style="margin:5px" type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2"> 
           <!--<input type = "submit" name = "submit_button">-->
           <a href="{% url 'question2' %}"> Next Question</a>
       

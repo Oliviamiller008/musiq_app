@@ -3,9 +3,11 @@
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+ 
  .materialize-red {
     background-color: #e51c23 !important;
   }
+  
   
   .materialize-red-text {
     color: #e51c23 !important;
@@ -5165,7 +5167,7 @@
   
   .btn, .btn-large, .btn-small,
   .btn-flat {
-    border: none;
+    border: blanchedalmond;
     border-radius: 2px;
     display: inline-block;
     height: 36px;
@@ -5355,7 +5357,7 @@
   }
   
   .fixed-action-btn.direction-left, .fixed-action-btn.direction-right {
-    padding: 0 0 0 15px;
+    padding: 0 0 0 10px;
   }
   
   .fixed-action-btn.direction-left ul, .fixed-action-btn.direction-right ul {
@@ -5367,9 +5369,11 @@
     height: 100%;
     left: auto;
     /*width 100% only goes to width of button container */
-    width: 500px;
+    width: 150px;
   }
-  
+  /*.rollovericons a{
+    margin: 10px;
+}*/
   .fixed-action-btn.direction-left ul li, .fixed-action-btn.direction-right ul li {
     display: inline-block;
     margin: 7.5px 15px 0 0;
