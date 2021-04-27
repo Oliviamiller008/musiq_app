@@ -18,21 +18,22 @@ def authorize_user():
     auth_manager = spotipy.oauth2.SpotifyOAuth(scope=scope,client_id = client_id, client_secret = client_secret, redirect_uri = redirect_uri, show_dialog=True)
     auth_url = auth_manager.get_authorize_url()
     webbrowser.open(auth_url)
-
+    return auth_url
 #creates a playlist called "Your MUSIQ Playlist" and returns playlist id
 def create_playlist():  
     playlist_name = "Your MUSIQ Playlist"
     user_id = sp.me()['id']
-    playlist = spotifyObject.user_playlist_create(user=user_id, name=playlist_name,public=True)
+    print('creating playlist')
+    playlist = sp.user_playlist_create(user=user_id, name=playlist_name,public=True)
     json_string = json.dumps(playlist, indent=4)
     data = json.loads(json_string)
     playlist_id = (data["id"])
     return playlist_id
  
 #adds a song to the created playlist 
-#def add_song(playlist_id, track_id):
-   # user_id = sp.me()['id']
-    #sp.user_playlist_add_tracks(user=user_id, playlist_id, tracks, position=None)
+def add_song(playlist_id, track_id):
+    user_id = sp.me()['id']
+    sp.user_playlist_add_tracks(user=user_id, playlist_id=playlist_id, tracks=track_id, position=None)
 
 
 
