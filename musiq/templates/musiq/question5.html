@@ -13,6 +13,94 @@
 </head>
 
 </form>
+<<<<<<< Updated upstream
+
+<form action="#" method="POST">
+
+    <body>
+        <center>
+            <h1 style="font-family:didot;font-size:42px;font-style:normal;font-weight: bold; color: rgb(170, 200, 207);
+      text-shadow: rgb(194, 51, 51) 1px 1px 1px; -webkit-font-smoothing: antialiased;">
+                Question 5: What city would you live in?
+            </h1>
+
+        </center>
+
+        <div class="row">
+            <div class="col s4 offset-s2 card card-image">
+                <center>
+                    <img src="https://cdn.unifiedcommerce.com/content/product/large/5900511104042.jpg" width="300" height="300">
+                </center>
+                
+
+                <p>
+                    <label>
+                        <form action = "{% url 'question5' %}" method="POST">
+                            <input type = "submit" name="group5" value="q5op1">
+                            <span>London, England</span>
+                            {%csrf_token%}
+                          </form>
+                    </label>
+                </p>
+
+
+            </div>
+
+            <div class="col s4 card card-image">
+                <center>
+                    <img src="https://latitudelegal.com/wp-content/uploads/2019/04/Nashville-tennessee.png" width="300" height="300">
+                </center>
+               
+
+                <p>
+                    <label>
+                        <form action = "{% url 'question5' %}" method="POST">
+                            <input type = "submit" name="group5" value="q5op2">
+                            <span>Nashville, Tennessee</span>
+                            {%csrf_token%}
+                          </form>
+=======
+<<<<<<< HEAD
+      
+  
+<body>
+    <center>
+        <h1> Question 5: What city would you live in?</h1>
+    
+    </center>
+
+    <div class="row">
+        <div class="col s6 card card-image">
+              <img src="paris.jpg" alt="paris">
+
+              <p>
+                <label>
+                  <form action = "{% url 'question5' %}" method="POST">
+                    <input type = "submit" name="group5" value="q5op1">
+                    <span>London, England</span>
+                    {%csrf_token%}
+                  </form>
+                </label>
+              </p>
+
+        
+        </div>
+
+        <div class="col s6 card card-image">
+            <img src="paris.jpg" alt="paris">
+          
+            <p>
+              <label>
+                <form action = "{% url 'question5' %}" method="POST">
+                  <input type = "submit" name="group5" value="q5op2">
+                  <span>Nashville, Tennessee</span>
+                  {%csrf_token%}
+                </form>
+              </label>
+            </p>
+        </div>
+    </div>
+=======
 
 <form action="#" method="POST">
 
@@ -38,9 +126,22 @@
                         <span>London, England</span>
                     </label>
                 </p>
+>>>>>>> 6f7cee5b28ce6a34bdac485b00cb217e8f66d2b0
 
 
+<<<<<<< HEAD
+              <p>
+                <label>
+                  <form action = "{% url 'question5' %}" method="POST">
+                    <input type = "submit" name="group5" value="q5op3">
+                    <span>Chicago, Illinois</span>
+                    {%csrf_token%}
+                  </form>
+                </label>
+              </p>
+=======
             </div>
+>>>>>>> 6f7cee5b28ce6a34bdac485b00cb217e8f66d2b0
 
             <div class="col s4 card card-image">
                 <center>
@@ -52,11 +153,28 @@
                     <label>
                         <input name="group5" type="radio" />
                         <span>Nashville, Tennessee</span>
+>>>>>>> Stashed changes
                     </label>
                 </p>
             </div>
         </div>
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+        <div class="col s6 card card-image">
+            <img src="paris.jpg" alt="paris">
+            <p>
+              <label>
+                <form action = "{% url 'question5' %}" method="POST">
+                  <input type = "submit" name="group5" value="q5op4">
+                  <span>Paris, France</span>
+                  {%csrf_token%}
+                </form>
+              </label>
+            </p>
+=======
+>>>>>>> Stashed changes
         <div class="row">
             <div class="col s4 offset-s2 card card-image">
                 <center>
@@ -66,8 +184,16 @@
 
                 <p>
                     <label>
+<<<<<<< Updated upstream
+                        <form action = "{% url 'question5' %}" method="POST">
+                            <input type = "submit" name="group5" value="q5op3">
+                            <span>Chicago, Illinois</span>
+                            {%csrf_token%}
+                          </form>
+=======
                         <input name="group5" type="radio" />
                         <span>Chicago, Illinois</span>
+>>>>>>> Stashed changes
                     </label>
                 </p>
 
@@ -77,6 +203,19 @@
                 <center>
                     <img src="https://www.aparisguide.com/paris-top.jpg" width="300" height="300">
                 </center>
+<<<<<<< Updated upstream
+                
+                <p>
+                    <label>
+                        <form action = "{% url 'question5' %}" method="POST">
+                            <input type = "submit" name="group5" value="q5op4">
+                            <span>Paris, France</span>
+                            {%csrf_token%}
+                          </form>
+                    </label>
+                </p>
+            </div>
+=======
                 <!--<img src="paris.jpg" alt="paris">-->
                 <p>
                     <label>
@@ -85,16 +224,25 @@
                     </label>
                 </p>
             </div>
+>>>>>>> 6f7cee5b28ce6a34bdac485b00cb217e8f66d2b0
+>>>>>>> Stashed changes
         </div>
 
         <center>
             <button type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2">
                 <a href="{% url 'endingpage' %}"> See your playlist!</a>
+<<<<<<< Updated upstream
+=======
 
             </button>
         </center>
 
     </body>
     </html>
+>>>>>>> Stashed changes
 
+            </button>
+        </center>
 
+    </body>
+    </html>

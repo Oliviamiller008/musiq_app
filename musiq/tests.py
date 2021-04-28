@@ -11,7 +11,7 @@ class MusiqTests(TestCase):
         testurl = authorize_user()
         self.assertEqual(testurl, 'https://accounts.spotify.com/authorize?client_id=d7152a4d370b484c9635c7ad12ccfde2&response_type=code&redirect_uri=http%3A%2F%2F127.0.0.1%3A8000%2Fquestion1%2F&scope=playlist-modify-public&show_dialog=True')
 
-#tests that create playlist creates playlist id of length 22
+#tests that create playlist creates unique playlist id of length 22
     def test_create_playlist(self):
         playlist_id = create_playlist()
         self.assertEqual(len(playlist_id), 22)

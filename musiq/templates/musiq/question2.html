@@ -12,6 +12,136 @@
 </head>
 
 </form>
+<<<<<<< Updated upstream
+
+<form action="#" method="POST">
+
+    <body>
+        <center>
+            <!-- using font: didot for question 2 title -->
+            <h1 style="font-family:didot;font-size:42px;font-style:normal;font-weight: bold; color: rgb(170, 200, 207);
+        text-shadow: #000 1px 1px 1px; -webkit-font-smoothing: antialiased;">
+                Question 2: What's your go-to weekend plans?
+            </h1>
+
+        </center>
+
+        <div class="row">
+
+            <div class="col s4 offset-s2 card card-image">
+                <center>
+                    <img src="https://www.countryandtownhouse.co.uk/wp-content/uploads/2020/06/GettyImages-1028123764.jpg" width="300" height="300">
+                </center>
+                
+
+                <p>
+                    <label>
+                        <form action = "{% url 'question2' %}" method="POST">
+                            <input type = "submit" name="group2" value="q2op1">
+                            <span>Date Night</span>
+                            {%csrf_token%}
+                          </form>
+                    </label>
+                </p>
+
+                <!--<div class="card-action">
+                <a href="">Rom-Com</a>
+                </div>-->
+            </div>
+
+            <div class="col s4 card card-image">
+                <center>
+                    <img src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_750,h_564,c_fill,g_faces/https://www.gcu.edu/sites/default/files/media/images/Blog/Woman-studying.jpg" width="300" height="300">
+                </center>
+                <!--<img src="paris.jpg" alt="paris">-->
+                <p>
+                    <label>
+                        <form action = "{% url 'question2' %}" method="POST">
+                            <input type = "submit" name="group2" value="q2op2">
+                            <span>Coffee Shop and Productivty</span>
+                            {%csrf_token%}
+                          </form>
+                    </label>
+                </p>
+
+=======
+      
+<form action = "#" method = "POST">
+  
+<body>
+    <center>  
+        <h1>Question 2: What's your go-to weekend plans?</h1>
+
+    </center>
+
+    <div class="row">
+        <div class="col s4 offset-s2 card card-image">
+            <center>
+                <img src="https://www.countryandtownhouse.co.uk/wp-content/uploads/2020/06/GettyImages-1028123764.jpg" width="300" height="300">
+            </center>
+   
+            
+              <p>
+                <label>
+                  <label>
+
+                    <form action = "{% url 'question2' %}" method="POST">
+                    <input type = "submit" name="group2" value="q2op1">
+                    <span>Date Night</span>
+                    {%csrf_token%}
+                  </label>
+                </label>
+              </p>
+            
+              <!--<div class="card-action">
+              <a href="">Rom-Com</a>
+              </div>-->
+        </div>
+
+        <div class="col s6 card card-image">
+            <img src="paris.jpg" alt="paris">
+            <p>
+              <label>
+                <form action = "{% url 'question2' %}" method="POST">
+                <input type = "submit" name="group2" value="q2op2">
+                <span>Coffee Shop and Productivity</span>
+                {%csrf_token%}
+              </label>
+            </p>
+          
+          
+            <!--<div class="card-action">
+            <a href="">Coffee shop and productivity</a>
+            </div>-->
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s6 card card-image">
+              <img src="paris.jpg" alt="paris">
+              <p>
+                <label>
+                  <label>
+                    <form action = "{% url 'question2' %}" method="POST">
+                    <input type = "submit" name="group2" value="q2op3">
+                    <span>Partying with Friends</span>
+                    {%csrf_token%}
+                  </label>
+                </label>
+              </p>
+            
+        </div>
+
+        <div class="col s6 card card-image">
+            <img src="paris.jpg" alt="paris">
+            <p>
+              <label>
+                  <form action = "{% url 'question2' %}" method="POST">
+                  <input type = "submit" name="group2" value="q2op4">
+                  <span>Traveling to a new city</span>
+                  {%csrf_token%}
+              </label>
+            </p>
 
 <form action="#" method="POST">
 
@@ -57,6 +187,7 @@
                     </label>
                 </p>
 
+>>>>>>> Stashed changes
 
                 <!--<div class="card-action">
                 <a href="">Coffee shop and productivity</a>
@@ -72,12 +203,39 @@
                 <!--<img src="paris.jpg" alt="paris">-->
                 <p>
                     <label>
+<<<<<<< Updated upstream
+                        <form action = "{% url 'question2' %}" method="POST">
+                            <input type = "submit" name="group2" value="q2op3">
+                            <span>Partying with friends</span>
+                            {%csrf_token%}
+                          </form>
+=======
                         <input name="group2" type="radio" />
                         <span>Partying with friends</span>
+>>>>>>> Stashed changes
                     </label>
                 </p>
 
             </div>
+<<<<<<< Updated upstream
+
+            <div class="col s4 card card-image">
+                <center>
+                    <img src="https://wttc.org/DesktopModules/MVC/NewsArticleList/images/141_20201013185512_Consumer%20Survey%20Finds%2070%20Percent%20of%20Travelers%20Plan%20to%20Holiday%20in%202021.jpg" width="300" height="300">
+                </center>
+                <!--<img src="paris.jpg" alt="paris">-->
+                <p>
+                    <label>
+                        <form action = "{% url 'question2' %}" method="POST">
+                            <input type = "submit" name="group2" value="q2op4">
+                            <span>Traveling to a new city</span>
+                            {%csrf_token%}
+                          </form>
+                    </label>
+                </p>
+            </div>
+        </div>
+=======
 
             <div class="col s4 card card-image">
                 <center>
@@ -105,6 +263,17 @@
 
 </body>
 </html>
+>>>>>>> Stashed changes
 
+</form>
 
+<center>
 
+    <button type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2">
+        <a href="{% url 'question3' %}"> Next Question</a>
+    </button>
+
+</center>
+
+</body>
+</html>

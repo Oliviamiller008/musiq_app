@@ -15,7 +15,7 @@
 
 </form>
       
-<form action = "#" method = "POST">
+
 
 <body>
 
@@ -35,13 +35,21 @@
             <div class="card-action">
               <p>
                 <label>
-                  <input name="group1" type="radio" value="q1op1" required>
+                  <form action = "{% url 'question1' %}" method="POST">
+<<<<<<< Updated upstream
+                    <input type = "submit" name="group1" value="q1op1">
+                    <span>It's great to be alive</span>
+                    {%csrf_token%}
+=======
+                  <button type="submit"  name="group1" value="q1op1">
                   <span>It's great to be alive</span>
+                  {%csrf_token%}
+>>>>>>> Stashed changes
+                  </form>
                 </label>
               </p>
 
-              <!--<input type = "radio" id= "q1op1" name= "QUESTION1_CHOICES" value = "q1op1">
-              <label for= "q1op1">It's great to be alive</label><br>-->
+            
             </div>
         </div>
 
@@ -49,19 +57,34 @@
           <center>
             <img src="https://i.pinimg.com/originals/1f/3f/2b/1f3f2b978bdeb65a9e3f4275482ad80c.jpg" width="300" height= "300">
           </center>
+<<<<<<< Updated upstream
+            
+=======
             <!--<img src="paris.jpg" alt="paris">-->
+>>>>>>> Stashed changes
           <div class="card-action">
             <!--<a href="">Today I swear I'm not doing anything</a>-->
 
             <p>
               <label>
-                <input name="group1" type="radio" value="q1op2">
-                <span>Today I swear I'm not doing anything</span>
+                <form action = "{% url 'question1' %}" method="POST">
+<<<<<<< Updated upstream
+                  <input type = "submit" name="group1" value="q1op2">
+                  <span>Today I swear im not doing anything</span>
+                  {%csrf_token%}
+                </form>
               </label>
             </p>
 
-            <!--<input type = "radio" id= "q1op2" name= "QUESTION1_CHOICES" value = "q1op2">
-            <label for= "q1op2">Today I swear I'm not doing anything</label><br>-->
+            
+=======
+                <input type="submit" name="group1"  value="q1op2">
+                <span>Today I swear I'm not doing anything</span>
+                {%csrf_token%}
+                </form>
+              </label>
+            </p>
+>>>>>>> Stashed changes
           </div>
         </div>
     </div>
@@ -76,14 +99,24 @@
 
               <p>
                 <label>
-                  <input name="group1" type="radio" value="q1op3">
+                  <form action = "{% url 'question1' %}" method="POST">
+<<<<<<< Updated upstream
+                    <input type = "submit" name="group1" value="q1op3">
+                    <span>I'm over this</span>
+                    {%csrf_token%}
+=======
+                  <input type = "submit" name="group1" value="q1op3">
                   <span>I'm over this</span>
+                  {%csrf_token%}
+>>>>>>> Stashed changes
+                  </form>
                 </label>
               </p>
 
-              <!--<a href="">I'm over this</a>
-              <input type = "radio" id= "q1op3" name= "QUESTION1_CHOICES" value = "q1op3">
-              <label for= "q1op3">I'm over this</label><br>-->
+<<<<<<< Updated upstream
+             
+=======
+>>>>>>> Stashed changes
             </div>
         </div>
 
@@ -91,19 +124,30 @@
           <center>
             <img src="https://www.detoxcentercolorado.com/wp-content/uploads/2020/02/AdobeStock_273862456.jpeg" width="300" height= "300">
           </center>
+<<<<<<< Updated upstream
+           
+=======
             <!--<img src="paris.jpg" alt="paris">-->
+>>>>>>> Stashed changes
             <div class="card-action">
 
               <p>
                 <label>
-                  <input name="group1" type="radio" value="q1op4">
+                  <form action = "{% url 'question1' %}" method="POST">
+<<<<<<< Updated upstream
+                    <input type = "submit" name="group1" value="q1op4">
+                    <span>I can't wait to see my friends</span>
+                    {%csrf_token%}
+=======
+                  <input type = "submit" name="group1" value="q1op4">
                   <span>I can't wait to see my friends</span>
+                  {%csrf_token%}
+>>>>>>> Stashed changes
+                  </form>
                 </label>
               </p>
 
-              <!--<a href="">I can't wait to see my friends</a>
-              <input type = "radio" id= "q1op4" name= "QUESTION1_CHOICES" value = "q1op4">
-              <label for= "q1op4">I can't wait to see my friends</label><br>-->
+              
           </div>
         </div>
     </div>
