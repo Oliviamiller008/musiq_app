@@ -2,6 +2,7 @@ from django.test import TestCase
 from musiq.spotifyAPI import create_playlist
 from musiq.spotifyAPI import authorize_user
 # Create your tests here.
+#For testing our system
 
 class MusiqTests(TestCase):
 

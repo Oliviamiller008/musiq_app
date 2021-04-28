@@ -1,94 +1,98 @@
+<!-- HTML file for question 4; this contains the set up for how each page will look including formatting, text and photos-->
+
 <!DOCTYPE html>
 <head>
     <title>Question 4</title>
 
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
- 
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </head>
 
 
 </form>
-      
-<form action = "#" method = "POST">
-  
 
-<body>
-    <center>
-      <h1 style = "font-family:didot;font-size:42px;font-style:normal;font-weight: bold; color: rgb(170, 200, 207);
-      text-shadow: #000 1px 1px 1px; -webkit-font-smoothing: antialiased;" > Question 4: What is your favorite color?</h1>
-    </center>
-    
+<form action="#" method="POST">
 
-    <div class="row">
-        <div class="col s4 offset-s2 card card-image">
-          <center>
-            <img src="https://colourlex.com/wp-content/uploads/2015/04/Cadmium_yellow_painted_swatch_Lipscher_spot-opt.jpg" width="300" height= "300">
-          </center>
-              <!--<img src="paris.jpg" alt="paris">-->
-              <p>
-                <label>
-                  <input name="group4" type="radio"/>
-                  <span>Yellow</span>
-                </label>
-              </p>
+
+    <body>
+        <center>
+            <h1 style="font-family:didot;font-size:42px;font-style:normal;font-weight: bold; color: rgb(170, 200, 207);
+      text-shadow: #000 1px 1px 1px; -webkit-font-smoothing: antialiased;">
+                Question 4: What is your favorite color?
+            </h1>
+        </center>
+
+
+        <div class="row">
+            <div class="col s4 offset-s2 card card-image">
+                <center>
+                    <img src="https://colourlex.com/wp-content/uploads/2015/04/Cadmium_yellow_painted_swatch_Lipscher_spot-opt.jpg" width="300" height="300">
+                </center>
+                <!--<img src="paris.jpg" alt="paris">-->
+                <p>
+                    <label>
+                        <input name="group4" type="radio" />
+                        <span>Yellow</span>
+                    </label>
+                </p>
+            </div>
+
+            <div class="col s4 card card-image">
+                <center>
+                    <img src="https://www.color-hex.com/palettes/32325.png" width="300" height="300">
+                </center>
+                <!--<img src="paris.jpg" alt="paris">-->
+
+                <p>
+                    <label>
+                        <input name="group4" type="radio" />
+                        <span>Black</span>
+                    </label>
+                </p>
+
+            </div>
         </div>
 
-        <div class="col s4 card card-image">
-          <center>
-            <img src="https://www.color-hex.com/palettes/32325.png" width="300" height= "300">
-          </center>
-            <!--<img src="paris.jpg" alt="paris">-->
+        <div class="row">
+            <div class="col s4 offset-s2 card card-image">
+                <center>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Color-blue.JPG" width="300" height="300">
+                </center>
+                <!--<img src="paris.jpg" alt="paris">-->
+                <p>
+                    <label>
+                        <input name="group4" type="radio" />
+                        <span>Blue</span>
+                    </label>
+                </p>
+            </div>
 
-            <p>
-              <label>
-                <input name="group4" type="radio"/>
-                <span>Black</span>
-              </label>
-            </p>
-
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col s4 offset-s2 card card-image">
-          <center>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Color-blue.JPG" width="300" height= "300">
-          </center>
-              <!--<img src="paris.jpg" alt="paris">-->
-              <p>
-                <label>
-                  <input name="group4" type="radio"/>
-                  <span>Blue</span>
-                </label>
-              </p>
+            <div class="col s4 card card-image">
+                <center>
+                    <img src="https://plchldr.co/i/250x215?&bg=d2b232&text=" width="300" height="300">
+                </center>
+                <!--<img src="paris.jpg" alt="paris">-->
+                <p>
+                    <label>
+                        <input name="group4" type="radio" />
+                        <span>Gold</span>
+                    </label>
+                </p>
+            </div>
         </div>
 
-        <div class="col s4 card card-image">
-          <center>
-            <img src="https://plchldr.co/i/250x215?&bg=d2b232&text=" width="300" height= "300">
-          </center>
-            <!--<img src="paris.jpg" alt="paris">-->
-            <p>
-              <label>
-                <input name="group4" type="radio"/>
-                <span>Gold</span>
-              </label>
-            </p>
-        </div>
-    </div>
-    
-    <center>
-        <button type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2"> 
-            <a href="{% url 'question5' %}"> Next Question</a>
-        </button>
-    </center>
+        <center>
+            <button type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2">
+                <a href="{% url 'question5' %}"> Next Question</a>
+            </button>
+        </center>
 
-</body>
-</html>
+    </body>
+    </html>
 
 
 

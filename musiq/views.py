@@ -8,6 +8,8 @@ from musiq.spotifyAPI import authorize_user
 from django.http import HttpResponse
 
 # Create your views here.
+#This file takes web request and creates a web reponse in the form of HTML pages that the browers can display
+
 def homepage(request):
     return render(request, 'musiq/homepage.html')
 
