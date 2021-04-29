@@ -7,6 +7,6 @@
     "\\musiq\\templates\\musiq",
     "\\musiq_app"
   ],
-  "SelectedNode": "\\musiq_app\\settings.py",
+  "SelectedNode": "\\musiq\\templates\\musiq\\endingpage.html",
   "PreviewInSolutionExplorer": false
 }

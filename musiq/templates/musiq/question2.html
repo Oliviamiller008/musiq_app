@@ -1,107 +1,119 @@
+<!-- HTML file for question 2; this contains the set up for how each page will look including formatting, text and photos-->
 <!DOCTYPE html>
 <head>
     <title>Question 2</title>
 
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 </head>
 
 </form>
-      
-<form action = "#" method = "POST">
-  
-<body>
-    <center>  <!-- using font: didot for question 2 title -->
-        <h1 style = "font-family:didot;font-size:42px;font-style:normal;font-weight: bold; color: rgb(170, 200, 207);
-        text-shadow: #000 1px 1px 1px; -webkit-font-smoothing: antialiased;" > Question 2: What's your go-to weekend plans?
-        </h1>
 
-    </center>
+<form action="#" method="POST">
 
-    <div class="row">
-      
-        <div class="col s4 offset-s2 card card-image">
-          <center>
-            <img src="https://www.countryandtownhouse.co.uk/wp-content/uploads/2020/06/GettyImages-1028123764.jpg" width="300" height= "300">
-          </center>
-              <!--<img src="paris.jpg" alt="paris">-->
-            
-              <p>
-                <label>
-                  <input name="group2" type="radio"/>
-                  <span>Date night</span>
-                </label>
-              </p>
-            
-              <!--<div class="card-action">
-              <a href="">Rom-Com</a>
-              </div>-->
+    <body>
+        <center>
+            <!-- using font: didot for question 2 title -->
+            <h1 style="font-family:didot;font-size:42px;font-style:normal;font-weight: bold; color: rgb(170, 200, 207);
+        text-shadow: #000 1px 1px 1px; -webkit-font-smoothing: antialiased;">
+                Question 2: What's your go-to weekend plans?
+            </h1>
+
+        </center>
+
+        <div class="row">
+
+            <div class="col s4 offset-s2 card card-image">
+                <center>
+                    <img src="https://www.countryandtownhouse.co.uk/wp-content/uploads/2020/06/GettyImages-1028123764.jpg" width="300" height="300">
+                </center>
+                
+
+                <p>
+                    <label>
+                        <form action = "{% url 'question2' %}" method="POST">
+                            <input type = "submit" name="group2" value="q2op1">
+                            <span>Date Night</span>
+                            {%csrf_token%}
+                          </form>
+                    </label>
+                </p>
+
+                <!--<div class="card-action">
+                <a href="">Rom-Com</a>
+                </div>-->
+            </div>
+
+            <div class="col s4 card card-image">
+                <center>
+                    <img src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_750,h_564,c_fill,g_faces/https://www.gcu.edu/sites/default/files/media/images/Blog/Woman-studying.jpg" width="300" height="300">
+                </center>
+                <!--<img src="paris.jpg" alt="paris">-->
+                <p>
+                    <label>
+                        <form action = "{% url 'question2' %}" method="POST">
+                            <input type = "submit" name="group2" value="q2op2">
+                            <span>Coffee Shop and Productivty</span>
+                            {%csrf_token%}
+                          </form>
+                    </label>
+                </p>
+
+
+                <!--<div class="card-action">
+                <a href="">Coffee shop and productivity</a>
+                </div>-->
+            </div>
         </div>
 
-        <div class="col s4 card card-image">
-          <center>
-            <img src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_750,h_564,c_fill,g_faces/https://www.gcu.edu/sites/default/files/media/images/Blog/Woman-studying.jpg" width="300" height= "300">
-          </center>
-            <!--<img src="paris.jpg" alt="paris">-->
-            <p>
-              <label>
-                <input name="group2" type="radio"/>
-                <span>Coffee shop and productivity</span>
-              </label>
-            </p>
-          
-          
-            <!--<div class="card-action">
-            <a href="">Coffee shop and productivity</a>
-            </div>-->
+        <div class="row">
+            <div class="col s4 offset-s2 card card-image">
+                <center>
+                    <img src="https://www.liveabout.com/thmb/NHaKyuOgBtgr2JmIm9hGWFpL4gI=/1464x1098/smart/filters:no_upscale()/partyfriends-ArtemVarnitsin-EyeEm-GettyImages-5bc4d2714cedfd0051ac4b78.jpeg" width="300" height="300">
+                </center>
+                <!--<img src="paris.jpg" alt="paris">-->
+                <p>
+                    <label>
+                        <form action = "{% url 'question2' %}" method="POST">
+                            <input type = "submit" name="group2" value="q2op3">
+                            <span>Partying with friends</span>
+                            {%csrf_token%}
+                          </form>
+                    </label>
+                </p>
+
+            </div>
+
+            <div class="col s4 card card-image">
+                <center>
+                    <img src="https://wttc.org/DesktopModules/MVC/NewsArticleList/images/141_20201013185512_Consumer%20Survey%20Finds%2070%20Percent%20of%20Travelers%20Plan%20to%20Holiday%20in%202021.jpg" width="300" height="300">
+                </center>
+                <!--<img src="paris.jpg" alt="paris">-->
+                <p>
+                    <label>
+                        <form action = "{% url 'question2' %}" method="POST">
+                            <input type = "submit" name="group2" value="q2op4">
+                            <span>Traveling to a new city</span>
+                            {%csrf_token%}
+                          </form>
+                    </label>
+                </p>
+            </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col s4 offset-s2 card card-image">
-          <center>
-            <img src="https://www.liveabout.com/thmb/NHaKyuOgBtgr2JmIm9hGWFpL4gI=/1464x1098/smart/filters:no_upscale()/partyfriends-ArtemVarnitsin-EyeEm-GettyImages-5bc4d2714cedfd0051ac4b78.jpeg" width="300" height= "300">
-          </center>
-              <!--<img src="paris.jpg" alt="paris">-->
-              <p>
-                <label>
-                  <input name="group2" type="radio"/>
-                  <span>Partying with friends</span>
-                </label>
-              </p>
-            
-        </div>
+</form>
 
-        <div class="col s4 card card-image">
-          <center>
-            <img src="https://wttc.org/DesktopModules/MVC/NewsArticleList/images/141_20201013185512_Consumer%20Survey%20Finds%2070%20Percent%20of%20Travelers%20Plan%20to%20Holiday%20in%202021.jpg" width="300" height= "300">
-          </center>
-            <!--<img src="paris.jpg" alt="paris">-->
-            <p>
-              <label>
-                <input name="group2" type="radio"/>
-                <span>Traveling to a new city</span>
-              </label>
-            </p>
-        </div>
-    </div>
+<center>
 
-  </form>
+    <button type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2">
+        <a href="{% url 'question3' %}"> Next Question</a>
+    </button>
 
-    <center>
-        
-        <button type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2"> 
-            <a href="{% url 'question3' %}"> Next Question</a>
-        </button>
+</center>
 
-    </center>
-    
 </body>
 </html>
-
-
-

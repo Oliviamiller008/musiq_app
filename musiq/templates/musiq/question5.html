@@ -1,96 +1,112 @@
+<!-- HTML file for question 5; this contains the set up for how each page will look including formatting, text and photos-->
+
 <!DOCTYPE html>
 <head>
     <title>Question 5</title>
 
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
- 
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </head>
 
-</form>
+
+
+
+    <body>
+        <center>
+            <h1 style="font-family:didot;font-size:42px;font-style:normal;font-weight: bold; color: rgb(170, 200, 207);
+      text-shadow: rgb(194, 51, 51) 1px 1px 1px; -webkit-font-smoothing: antialiased;">
+                Question 5: What city would you live in?
+            </h1>
+
+        </center>
+
+        <div class="row">
+            <div class="col s4 offset-s2 card card-image">
+                <center>
+                    <img src="https://cdn.unifiedcommerce.com/content/product/large/5900511104042.jpg" width="300" height="300">
+                </center>
+                
+
+                <p>
+                    <label>
+                        <form action = "{% url 'question5' %}" method="POST">
+                            <input type = "submit" name="group5" value="q5op1">
+                            <span>London, England</span>
+                            {%csrf_token%}
+                          </form>
+                    </label>
+                </p>
+
+
+            </div>
+
+            <div class="col s4 card card-image">
+                <center>
+                    <img src="https://latitudelegal.com/wp-content/uploads/2019/04/Nashville-tennessee.png" width="300" height="300">
+                </center>
+               
+
+                <p>
+                    <label>
+                        <form action = "{% url 'question5' %}" method="POST">
+                            <input type = "submit" name="group5" value="q5op2">
+                            <span>Nashville, Tennessee</span>
+                            {%csrf_token%}
+                          </form>
+                        </form>
+                    </label>
+                </p>
+
+            </div>
+         
+
       
-<form action = "#" method = "POST">
-  
-<body>
-    <center>
-      <h1 style = "font-family:didot;font-size:42px;font-style:normal;font-weight: bold; color: rgb(170, 200, 207);
-      text-shadow: #000 1px 1px 1px; -webkit-font-smoothing: antialiased;" > Question 5: What city would you live in?</h1>
-    
-    </center>
+        <div class="row">
+            <div class="col s4 offset-s2 card card-image">
+                <center>
+                    <img src="https://media.timeout.com/images/105650200/750/422/image.jpg" width="300" height="300">
+                </center>
+                <!--<img src="paris.jpg" alt="paris">-->
 
-    <div class="row">
-        <div class="col s4 offset-s2 card card-image">
-          <center>
-            <img src="https://cdn.unifiedcommerce.com/content/product/large/5900511104042.jpg" width="300" height= "300">
-          </center>
-              <!--<img src="paris.jpg" alt="paris">-->
+                <p>
+                    <label>
+                        <form action = "{% url 'question5' %}" method="POST">
+                            <input type = "submit" name="group5" value="q5op3">
+                            <span>Chicago, Illinois</span>
+                            {%csrf_token%}
+                          </form>
+                    </label>
+                </p>
 
-              <p>
-                <label>
-                  <input name="group5" type="radio"/>
-                  <span>London, England</span>
-                </label>
-              </p>
+            </div>
 
-        
+            <div class="col s4 card card-image">
+                <center>
+                    <img src="https://www.aparisguide.com/paris-top.jpg" width="300" height="300">
+                </center>
+                
+                <p>
+                    <label>
+                        <form action = "{% url 'question5' %}" method="POST">
+                            <input type = "submit" name="group5" value="q5op4">
+                            <span>Paris, France</span>
+                            {%csrf_token%}
+                          </form>
+                    </label>
+                </p>
+            </div>
         </div>
 
-        <div class="col s4 card card-image">
-          <center>
-            <img src="https://latitudelegal.com/wp-content/uploads/2019/04/Nashville-tennessee.png" width="300" height= "300">
-          </center>
-            <!--<img src="paris.jpg" alt="paris">-->
-          
-            <p>
-              <label>
-                <input name="group5" type="radio"/>
-                <span>Nashville, Tennessee</span>
-              </label>
-            </p>
-        </div>
-    </div>
+        <center>
+            <button type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2">
+                <a href="{% url 'endingpage' %}"> See your playlist!</a>
 
-    <div class="row">
-        <div class="col s4 offset-s2 card card-image">
-          <center>
-            <img src="https://media.timeout.com/images/105650200/750/422/image.jpg" width="300" height= "300">
-          </center>
-              <!--<img src="paris.jpg" alt="paris">-->
+            </button>
+        </center>
 
-              <p>
-                <label>
-                  <input name="group5" type="radio"/>
-                  <span>Chicago, Illinois</span>
-                </label>
-              </p>
-
-        </div>
-
-        <div class="col s4 card card-image">
-          <center>
-            <img src="https://www.aparisguide.com/paris-top.jpg" width="300" height= "300">
-          </center>
-            <!--<img src="paris.jpg" alt="paris">-->
-            <p>
-              <label>
-                <input name="group5" type="radio"/>
-                <span>Paris, France</span>
-              </label>
-            </p>
-        </div>
-    </div>
-    
-    <center>
-        <button type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2"> 
-            <a href="{% url 'endingpage' %}"> See your playlist!</a>
-
-        </button>
-    </center>
-    
-</body>
-</html>
-
-
+    </body>
+    </html>

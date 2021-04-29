@@ -5,20 +5,28 @@ from spotipy.oauth2 import SpotifyOAuth
 from spotipy import util
 import webbrowser
 
-client_id = 'd7152a4d370b484c9635c7ad12ccfde2'
-client_secret = 'e5e56c343d9d495d9063511aa8ece62d'
-redirect_uri = 'http://127.0.0.1:8000/question1/'
-scope = 'playlist-modify-public'
-auth_manager = spotipy.oauth2.SpotifyOAuth(scope=scope,client_id = client_id, client_secret = client_secret, redirect_uri = redirect_uri, show_dialog=True)
+client_id = 'd7152a4d370b484c9635c7ad12ccfde2' #given at registration of application
+client_secret = 'e5e56c343d9d495d9063511aa8ece62d' 
+redirect_uri = 'http://127.0.0.1:8000/question1/' #where user gets directed to after login
+response_type = "code" #how to know if the request went through or if an error occured
+scope = 'playlist-modify-public' #what type of authorization is given
+auth_manager = spotipy.oauth2.SpotifyOAuth(scope=scope,client_id = client_id, client_secret = client_secret,redirect_uri = redirect_uri, show_dialog=True)
 sp = spotipy.Spotify(auth_manager=auth_manager)
 
 
 #brings user to authentication page
 def authorize_user():
-    auth_manager = spotipy.oauth2.SpotifyOAuth(scope=scope,client_id = client_id, client_secret = client_secret, redirect_uri = redirect_uri, show_dialog=True)
+    #if(response_type == "some valid authentication reponse?")
+    auth_manager = spotipy.oauth2.SpotifyOAuth(scope=scope,client_id = client_id, client_secret = client_secret,redirect_uri = redirect_uri, show_dialog=True)
     auth_url = auth_manager.get_authorize_url()
     webbrowser.open(auth_url)
+   # elseif(response_type == "access_denied"){
+        #cancel the request
+    #}
+
+    
     return auth_url
+
 #creates a playlist called "Your MUSIQ Playlist" and returns playlist id
 def create_playlist():  
     playlist_name = "Your MUSIQ Playlist"
