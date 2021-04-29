@@ -4,23 +4,43 @@
 <head> 
     <title> Welcome Page</title>
     
+    
     <!--Importing materialize.css-->
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <link href='https://fonts.googleapis.com/css?family=B612' rel='stylesheet'>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Importing google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+   
+    
+    body {
+        font-family: 'B612';font-size: 82px; color: black;
+    }
+
+    body { background: #efefef73 url(https://i1.wp.com/abovewhispers.com/wp-content/uploads/2016/07/DJ-Set.jpg) repeat scroll top left; }
+    .button {
+      background-color:green;
+      border-color:red;
+      color:black;
+      }
+    </style>
 
 </head>
 
 <body> 
 
     <center>
-        <h1>MUSIQ !!!!</h1>
-
-        <button type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2 z-depth-2"> 
-            <a href="{% url 'login' %}">Begin</a>
+            <h1 style="color: white;font-family: 'Fredoka One', cursive;font-size: 100; font-weight: 1000; font-stretch: wider;">MUSIQ</h1>
+            <p style="font-family: Roboto;color: white; font-size: 20px;">-A mood playlist generator-<br><br> Tired of trying to find a playlist that suits your mood? Take our quick 5 minute quiz and MUSIQ will create a Spotify playlist that you'll love! </p>
+        <button style ="border-radius: 15px 15px;background-color: rgb(106, 233, 22); font-family: 'Times New Roman', Times, serif; font-weight: bolder;color: black;" type="button" class="waves-effect waves-blue btn white black-text">
+            <a href="{% url 'login' %}">Create your playlist!</a>
         </button>
+        
 
     </center>
 
