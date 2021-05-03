@@ -23,6 +23,7 @@ from musiq.views import question4
 from musiq.views import question5
 from musiq.views import endingpage 
 from musiq.views import login
+from musiq.views import playlist
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
@@ -35,6 +36,7 @@ urlpatterns = [
     path('question4/', question4, name = 'question4'),
     path('question5/', question5, name = 'question5'),
     path('endingpage/', endingpage, name = 'endingpage')
+    #path('playlist/', playlist, name = 'playlist')
 ]
 
 urlpatterns += staticfiles_urlpatterns()

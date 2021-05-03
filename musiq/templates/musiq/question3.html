@@ -11,17 +11,26 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+
+        body { background:rgb(231, 241, 192) repeat scroll top left; }
+
+        body {
+        font-family: 'Fredoka One';font-size: 10px; color: black;
+        }
+
+    </style>
 </head>
 
 </form>
       
-<form action = "#" method = "POST">
-  
+<form action = "{% url 'question3' %}" method="POST">
   
       <body>
           <center>
-              <h1 style="font-family:didot;font-size:42px;font-style:normal;font-weight: bold; color: rgb(170, 200, 207);
-        text-shadow: #000 1px 1px 1px; -webkit-font-smoothing: antialiased;">
+              
+              <h1 style="font-family:'Fredoka One';font-size:42px;font-style:normal;font-weight: bold; color: rgb(238, 169, 20);">
                   Question 3: What is your favorite instrument?
               </h1>
           </center>
@@ -32,17 +41,13 @@
                       <img src="https://www.mi.edu/wp-content/uploads/2018/12/Guitar-History-How-the-Guitar-has-Evolved.jpg" width="300" height="300">
                   </center>
                   
-  
-                  <p>
+                    <div class="card-content">
                       <label>
-                        <form action = "{% url 'question3' %}" method="POST">
-                            <input type = "submit" name="group3" value="q3op1">
+                            <input type = "radio" name="group3" value="q3op1">
                             <span>Guitar</span>
                             {%csrf_token%}
-                          </form>
                       </label>
-                  </p>
-  
+                    </div>
               </div>
   
               <div class="col s4 card card-image">
@@ -50,16 +55,13 @@
                       <img src="https://www.whrb.org/application/files/thumbnails/whrb_large/6915/5398/2913/trumpet.jpg" width="300" height="300">
                   </center>
                   
-  
-                  <p>
-                      <label>
-                        <form action = "{% url 'question3' %}" method="POST">
-                            <input type = "submit" name="group3" value="q3op2">
+                      <div class="card-content">
+                        <label>
+                            <input type = "radio" name="group3" value="q3op2">
                             <span>Trumpet</span>
                             {%csrf_token%}
-                          </form>
-                      </label>
-                  </p>
+                        </label>
+                     </div>
               </div>
           </div>
   
@@ -69,15 +71,13 @@
                       <img src="https://cdnp0.stackassets.com/fdfe029162b1e81e1e9a8c07a34d4ae133b1dfdb/store/fed545fb028c56bde01ab09fe8f7c9ad9cd21cb534cd37f2daa36d86d8f5/product_36853_product_shot_wide.jpg" width="300" height="300">
                   </center>
                   
-                  <p>
+                  <div class="card-content">
                       <label>
-                        <form action = "{% url 'question3' %}" method="POST">
-                            <input type = "submit" name="group3" value="q3op3">
+                            <input type = "radio" name="group3" value="q3op3">
                             <span>Piano</span>
                             {%csrf_token%}
-                          </form>
                       </label>
-                  </p>
+                </div>
               </div>
   
               <div class="col s4 card card-image">
@@ -87,23 +87,22 @@
                   <!--<img src="paris.jpg" alt="paris">-->
                   <p>
                       <label>
-                        <form action = "{% url 'question3' %}" method="POST">
-                            <input type = "submit" name="group3" value="q3op4">
+                            <input type = "radio" name="group3" value="q3op4">
                             <span>Violin</span>
                             {%csrf_token%}
-                          </form>
                       </label>
                   </p>
   
               </div>
           </div>
-  
+
+</form>
           <center>
-              <button type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2">
+              <button type="button" class="waves-effect waves-light btn-large white">
                   <a href="{% url 'question4' %}"> Next Question</a>
               </button>
           </center>
-  
+        
   
       </body>
       </html>

@@ -10,16 +10,25 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+
+        body { background:rgb(195, 192, 241) repeat scroll top left; }
+
+        body {
+        font-family: 'Fredoka One';font-size: 10px; color: black;
+        }
+
+    </style>
 </head>
 
-
+<form action = "{% url 'question5' %}" method="POST"></form>
 
 
     <body>
         <center>
-            <h1 style="font-family:didot;font-size:42px;font-style:normal;font-weight: bold; color: rgb(170, 200, 207);
-      text-shadow: rgb(194, 51, 51) 1px 1px 1px; -webkit-font-smoothing: antialiased;">
-                Question 5: What city would you live in?
+
+            <h1 style="color: rgb(109, 31, 124);font-family: 'Fredoka One', cursive;font-size: 36px; font-weight: 700;">Question 5: What city would you live in?</h1>
             </h1>
 
         </center>
@@ -30,18 +39,13 @@
                     <img src="https://cdn.unifiedcommerce.com/content/product/large/5900511104042.jpg" width="300" height="300">
                 </center>
                 
-
-                <p>
+                <div class="card-content">
                     <label>
-                        <form action = "{% url 'question5' %}" method="POST">
-                            <input type = "submit" name="group5" value="q5op1">
+                            <input type = "radio" name="group5" value="q5op1">
                             <span>London, England</span>
                             {%csrf_token%}
-                          </form>
                     </label>
-                </p>
-
-
+                </div>
             </div>
 
             <div class="col s4 card card-image">
@@ -50,16 +54,13 @@
                 </center>
                
 
-                <p>
+                <div class="card-content">
                     <label>
-                        <form action = "{% url 'question5' %}" method="POST">
-                            <input type = "submit" name="group5" value="q5op2">
+                            <input type = "radio" name="group5" value="q5op2">
                             <span>Nashville, Tennessee</span>
                             {%csrf_token%}
-                          </form>
-                        </form>
                     </label>
-                </p>
+                </div>
 
             </div>
          
@@ -72,15 +73,13 @@
                 </center>
                 
 
-                <p>
+                <div class="card-content">
                     <label>
-                        <form action = "{% url 'question5' %}" method="POST">
-                            <input type = "submit" name="group5" value="q5op3">
+                            <input type = "radio" name="group5" value="q5op3">
                             <span>Chicago, Illinois</span>
                             {%csrf_token%}
-                          </form>
                     </label>
-                </p>
+                </div>
 
             </div>
 
@@ -89,22 +88,20 @@
                     <img src="https://www.aparisguide.com/paris-top.jpg" width="300" height="300">
                 </center>
                 
-                <p>
+                <div class = "card-content">
                     <label>
-                        <form action = "{% url 'question5' %}" method="POST">
-                            <input type = "submit" name="group5" value="q5op4">
+                            <input type = "radio" name="group5" value="q5op4">
                             <span>Paris, France</span>
                             {%csrf_token%}
-                          </form>
                     </label>
-                </p>
+                </div>
             </div>
         </div>
 
         <center>
-            <button type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2">
+            <button type="button" class="waves-effect waves-light btn-large white">
                 <a href="{% url 'endingpage' %}"> See your playlist!</a>
-
+             
             </button>
         </center>
 

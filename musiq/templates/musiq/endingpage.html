@@ -11,14 +11,35 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+
+        body { background:rgb(221, 199, 223) repeat scroll top left; }
+
+        body {
+        font-family: 'Fredoka One';font-size: 10px; color: black;
+        }
+
+    </style>
 </head>
 <body>
     <center>
-        <h1> Thank you for taking the quiz.</h1>
 
-        <button type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2">
-            <a href="{% url 'homepage' %}"> Play Again</a>
-        </button>
+        <h1 style="color: rgb(37, 68, 153);font-family: 'Fredoka One', cursive;font-size: 36px; font-weight: 700;">Thank you for taking the quiz.</h1>
+    </h1>
+
+        <!-- this button does not work yet-->
+        <button type="button" class="btn waves-effect waves-light white lighten-4 z-depth-2">
+            <a href="{% url 'endingpage' %}"> See your playlist!</a>
+            </button>
+
+        <p>
+            <button type="button" class="btn waves-effect waves-light white lighten-4 z-depth-2">
+                <a href="{% url 'homepage' %}"> Play Again</a>
+            </button>
+        </p>
+
+     
 
     </center>
 

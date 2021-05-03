@@ -65,10 +65,9 @@ def authorize_user():
     auth_manager = spotipy.oauth2.SpotifyOAuth(scope=scope,client_id = client_id, client_secret = client_secret,redirect_uri = redirect_uri, show_dialog=True)
     auth_url = auth_manager.get_authorize_url()
     webbrowser.open(auth_url)
-   # elseif(response_type == "access_denied"){
+    # elseif(response_type == "access_denied"){
         #cancel the request
     #}
-
     
     return auth_url
 
@@ -88,5 +87,6 @@ def add_song(playlist_id, track_id):
     user_id = sp.me()['id']
     sp.user_playlist_add_tracks(user=user_id, playlist_id=playlist_id, tracks=track_id, position=None)
 
-
-
+def open_playlist(playlist_id):
+    results = sp.playlist(playlist_id)
+    print(json.dumps(results, indent=4))

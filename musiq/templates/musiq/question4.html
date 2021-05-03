@@ -10,20 +10,25 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+
+        body { background:rgb(192, 241, 196) repeat scroll top left; }
+
+        body {
+        font-family: 'Fredoka One';font-size: 10px; color: black;
+        }
+
+    </style>
 </head>
 
 
-</form>
-
-  
-    
-
+<form action = "{% url 'question4' %}" method="POST">
 
     <body>
         <center>
-            <h1 style="font-family:didot;font-size:42px;font-style:normal;font-weight: bold; color: rgb(170, 200, 207);
-      text-shadow: #000 1px 1px 1px; -webkit-font-smoothing: antialiased;">
-                Question 4: What is your favorite color?
+
+            <h1 style="color: rgb(29, 134, 38);font-family: 'Fredoka One', cursive;font-size: 36px; font-weight: 700;">Question 4: What is your favorite color?</h1>
             </h1>
         </center>
 
@@ -34,15 +39,14 @@
                     <img src="https://colourlex.com/wp-content/uploads/2015/04/Cadmium_yellow_painted_swatch_Lipscher_spot-opt.jpg" width="300" height="300">
                 </center>
                
-                <p>
+                <div class="card-content">
                     <label>
-                        <form action = "{% url 'question4' %}" method="POST">
-                            <input type = "submit" name="group4" value="q4op1">
+                            <input type = "radio" name="group4" value="q4op1">
                             <span>Yellow</span>
                             {%csrf_token%}
-                          </form>
                     </label>
-                </p>
+                </div>
+            
             </div>
 
             <div class="col s4 card card-image">
@@ -51,15 +55,14 @@
                 </center>
                 
 
-                <p>
+                <div class="card-content">
                     <label>
-                        <form action = "{% url 'question4' %}" method="POST">
-                            <input type = "submit" name="group4" value="q4op2">
-                            <span>Black</span>
-                            {%csrf_token%}
-                          </form>
+                        <input type = "radio" name="group4" value="q4op2">
+                        <span>Black</span>
+                        {%csrf_token%}
                     </label>
-                </p>
+
+                </div>
 
             </div>
         </div>
@@ -70,15 +73,14 @@
                     <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Color-blue.JPG" width="300" height="300">
                 </center>
                
-                <p>
+                <div class="card-content">
                     <label>
-                        <form action = "{% url 'question4' %}" method="POST">
-                            <input type = "submit" name="group4" value="q4op3">
+                            <input type = "radio" name="group4" value="q4op3">
                             <span>Blue</span>
                             {%csrf_token%}
-                          </form>
                     </label>
-                </p>
+                </div>
+           
             </div>
 
             <div class="col s4 card card-image">
@@ -86,26 +88,26 @@
                     <img src="https://plchldr.co/i/250x215?&bg=d2b232&text=" width="300" height="300">
                 </center>
                
-                <p>
+                <div class="card-content">
                     <label>
-                        <form action = "{% url 'question4' %}" method="POST">
-                            <input type = "submit" name="group4" value="q4op4">
-                            <span>Gold</span>
-                            {%csrf_token%}
-                          </form>
+                        <input type = "radio" name="group4" value="q4op4">
+                        <span>Gold</span>
+                        {%csrf_token%}
+                      </form>
                     </label>
-                </p>
-            </div>
-        </div>
-
+                </div>
 
             </div>
         </div>
 
 
+            </div>
+        </div>
+
+    </form>
 
         <center>
-            <button type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2">
+            <button type="button" class="waves-effect waves-light btn-large white">
                 <a href="{% url 'question5' %}"> Next Question</a>
             </button>
         </center>

@@ -9,23 +9,28 @@
      
      <!-- Compiled and minified JavaScript -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-     <style type="text/css">
-    </style>
-  </style>
+
+     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+     <style>
+ 
+         body { background:rgb(241, 192, 192) repeat scroll top left; }
+ 
+         body {
+         font-family: 'Fredoka One';font-size: 10px; color: black;
+         }
+ 
+     </style>
+ 
 </head>
 
-</form>
+<form action = "{% url 'question1' %}" method="POST">
       
-
-
 <body>
 
     <center>
-        <h1 style ="font-family:didot;font-size:42px;font-style:normal;font-weight: bold; color: rgb(170, 200, 207);
-        text-shadow: #000 1px 1px 1px; -webkit-font-smoothing: antialiased;" >Question 1: Which phrase best describes how you feel today? 
-        
-      </h1>
-        
+      <h1 style="color: rgb(167, 46, 120);font-family: 'Fredoka One', cursive;font-size: 36px; font-weight: 700;">Question 1: Which phrase best describes how you feel today? </h1>
+        <!--  <h1 style ="font-family: 'Fredoka One';font-size:42px;font-weight: bold; color: rgb(170, 200, 207);
+        text-shadow: #000 1px 1px 1px; " >Question 1: Which phrase best describes how you feel today? -->        
     </center>
 
     <div class="row">
@@ -33,38 +38,36 @@
           <center>
               <img src="https://miro.medium.com/max/4812/1*xR-TSoQF-BEaXF3hXyXn5Q.jpeg" width="300" height= "300">
             </center>
-            <div class="card-action">
-              <p>
+            
+            <div class="card-content">
                 <label>
-                  <form action = "{% url 'question1' %}" method="POST">
-                    <input type = "submit" name="group1" value="q1op1">
+                  <!--<form action = "{% url 'question1' %}" method="POST">-->
+                    <input type = "radio" name="group1" value="q1op1">
                     <span>It's great to be alive</span>
                     {%csrf_token%}
-                  </form>
+                  <!--</form>-->
                 </label>
-              </p>
+            </div>
 
             
             </div>
-        </div>
+        
 
         <div class="col s4 card card-image">
           <center>
             <img src="https://i.pinimg.com/originals/1f/3f/2b/1f3f2b978bdeb65a9e3f4275482ad80c.jpg" width="300" height= "300">
           </center>
             
-          <div class="card-action">
+          <div class="card-content">
             <!--<a href="">Today I swear I'm not doing anything</a>-->
-
-            <p>
               <label>
-                <form action = "{% url 'question1' %}" method="POST">
-                  <input type = "submit" name="group1" value="q1op2">
+                <!--<form action = "{% url 'question1' %}" method="POST">-->
+                  <input type = "radio" name="group1" value="q1op2">
                   <span>Today I swear im not doing anything</span>
                   {%csrf_token%}
-                </form>
+                <!--</form>-->
               </label>
-            </p>
+          </div>
 
             
           </div>
@@ -77,20 +80,15 @@
             <img src="https://cdn.someecards.com/someecards/usercards/just-call-me-a-bridge-cause-im-over-it-795d2.png" width="300" height= "300">
           </center>
                <!--<<img src="images/paris.jpg" alt="paris" width="1000" height ="500">-->
-            <div class="card-action">
-
-              <p>
+              <div class = "card-content">
                 <label>
-                  <form action = "{% url 'question1' %}" method="POST">
-                    <input type = "submit" name="group1" value="q1op3">
+                  <!--<form action = "{% url 'question1' %}" method="POST">-->
+                    <input type = "radio" name="group1" value="q1op3">
                     <span>I'm over this</span>
                     {%csrf_token%}
-                  </form>
+                  <!--</form>-->
                 </label>
-              </p>
-
-             
-            </div>
+              </div>
         </div>
 
         <div class="col s4 card card-image">
@@ -98,17 +96,17 @@
             <img src="https://www.detoxcentercolorado.com/wp-content/uploads/2020/02/AdobeStock_273862456.jpeg" width="300" height= "300">
           </center>
            
-            <div class="card-action">
-
-              <p>
+    
+              <div class = "card-content">
                 <label>
-                  <form action = "{% url 'question1' %}" method="POST">
-                    <input type = "submit" name="group1" value="q1op4">
+                  <!--<form action = "{% url 'question1' %}" method="POST">-->
+                    <input type = "radio" name="group1" value="q1op4">
+                    <!--<label for="q1op4">I can't wait to see my friends</label><br>-->
                     <span>I can't wait to see my friends</span>
                     {%csrf_token%}
-                  </form>
+                  <!--</form>-->
                 </label>
-              </p>
+              </div>
 
               
           </div>
@@ -119,8 +117,9 @@
 
     <center>
 
-      <button style="margin:5px" type="button" class="btn waves-effect waves-light light-blue lighten-4 z-depth-2"> 
+      <button style="margin:5px" type="button" class="waves-effect waves-light btn-large white"> 
           <!--<input type = "submit" name = "submit_button">-->
+                  
           <a href="{% url 'question2' %}"> Next Question</a>
       
       </button>

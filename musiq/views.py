@@ -144,7 +144,10 @@ def endingpage(request):
 
     return render(request, 'musiq/endingpage.html')
 
-
+#brings user to open up spotify playlist
+def playlist(request):
+    open_playlist(playlist_id)
+    return HttpResponse(status =200)
     
 
 
