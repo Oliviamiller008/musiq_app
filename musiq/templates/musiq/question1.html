@@ -41,11 +41,19 @@
             
             <div class="card-content">
                 <label>
-                  <!--<form action = "{% url 'question1' %}" method="POST">-->
-                    <input type = "radio" name="group1" value="q1op1">
+                  <!-- 
+                  <form action = "{% url 'question1' %}" method="POST">
+                    <center>
+                      <input type = "submit" class="waves-effect waves-light btn" name="group1" id="q1op1" value = "It's great to be alive">
+                      <span>I'm over this</span>
+                      {%csrf_token%}
+                    </center> 
                     <span>It's great to be alive</span>
-                    {%csrf_token%}
-                  <!--</form>-->
+                  </form>
+                  -->
+                  <input type = "radio" name="group1" value="q1op1">
+                  <span>It's great to be alive</span>
+                  {%csrf_token%}   
                 </label>
             </div>
 
@@ -61,11 +69,18 @@
           <div class="card-content">
             <!--<a href="">Today I swear I'm not doing anything</a>-->
               <label>
-                <!--<form action = "{% url 'question1' %}" method="POST">-->
+                <!-- 
+                  <form action = "{% url 'question1' %}" method="POST">
+                  <center>
+                    <input type = "submit" class="waves-effect waves-light btn" name="group1" id="q1op2" value = "Today I swear im not doing anything">
+                    {%csrf_token%}
+                  </center> -->
+                  <!--<span>Today I swear im not doing anything</span>-->      
                   <input type = "radio" name="group1" value="q1op2">
                   <span>Today I swear im not doing anything</span>
-                  {%csrf_token%}
-                <!--</form>-->
+                  {%csrf_token%} 
+
+                </form>
               </label>
           </div>
 
@@ -82,11 +97,16 @@
                <!--<<img src="images/paris.jpg" alt="paris" width="1000" height ="500">-->
               <div class = "card-content">
                 <label>
-                  <!--<form action = "{% url 'question1' %}" method="POST">-->
-                    <input type = "radio" name="group1" value="q1op3">
-                    <span>I'm over this</span>
-                    {%csrf_token%}
-                  <!--</form>-->
+                  <!--<form action = "{% url 'question1' %}" method="POST">
+                    <center>
+                      <input type = "submit" class="waves-effect waves-light btn" name="group1" id="q1op3" value = "Im over this">
+                      {%csrf_token%}
+                    </center>
+                  </form>-->
+                  <input type = "radio" name="group1" value="q1op3">
+                  <span>I'm over this</span>
+                  {%csrf_token%} 
+
                 </label>
               </div>
         </div>
@@ -99,12 +119,18 @@
     
               <div class = "card-content">
                 <label>
-                  <!--<form action = "{% url 'question1' %}" method="POST">-->
+                  <!--
+                    <form action = "{% url 'question1' %}" method="POST">
+                    <center>
+                      <input type = "submit" class="waves-effect waves-light btn" name="group1" id = "q1op4" value="I can't wait to see my friends">
+                      {%csrf_token%}
+
+                    </center>
+                  -->
                     <input type = "radio" name="group1" value="q1op4">
-                    <!--<label for="q1op4">I can't wait to see my friends</label><br>-->
                     <span>I can't wait to see my friends</span>
-                    {%csrf_token%}
-                  <!--</form>-->
+                    {%csrf_token%} 
+                  </form>
                 </label>
               </div>
 
@@ -113,18 +139,24 @@
         </div>
     </div>
 
-  </form>
-
     <center>
 
-      <button style="margin:5px" type="button" class="waves-effect waves-light btn-large white"> 
-          <!--<input type = "submit" name = "submit_button">-->
+      <!--
+      <input type = "submit" style="margin:5px" class = "waves-effect waves-light btn-large white">
+      -->
+
+      <!--<button style="margin:5px" type="button" class="waves-effect waves-light btn-large white"> 
+          <input type = "submit" name = "submit_button">-->
                   
-          <a href="{% url 'question2' %}"> Next Question</a>
+          <a href="{% url 'question2' %}">
+            <input type = "submit" style="margin:5px" class = "waves-effect waves-light btn-large white"/>
+          </a>
       
       </button>
   
   </center>
+
+</form>
 
     
 </body>

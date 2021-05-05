@@ -22,8 +22,7 @@
     </style>
 </head>
 
-<form action = "{% url 'question5' %}" method="POST"></form>
-
+<form action = "{% url 'question5' %}" method="POST">
 
     <body>
         <center>
@@ -97,6 +96,8 @@
                 </div>
             </div>
         </div>
+    
+    <!--
 
         <center>
             <button type="button" class="waves-effect waves-light btn-large white">
@@ -104,6 +105,15 @@
              
             </button>
         </center>
+    -->
+        <center>
+            <a href="{% url 'endingpage' %}">
+                <input type = "submit" style="margin:5px" class = "waves-effect waves-light btn-large white"/>
+            </a>
+        </center>
+        
+
+    </form>
 
     </body>
     </html>
