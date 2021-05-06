@@ -29,10 +29,11 @@
     </h1>
 
         <!-- this button does not work yet-->
-        <button type="button" class="btn waves-effect waves-light white lighten-4 z-depth-2">
-            <a href="{% url 'endingpage' %}"> See your playlist!</a>
-            </button>
-
+        <form action = "{% url 'endingpage' %}" method="POST">
+        <input type="submit" value = "See your playlist!" class="btn waves-effect waves-light white lighten-4 z-depth-2">
+            {%csrf_token%}
+        </input>
+        </form>
         <p>
             <button type="button" class="btn waves-effect waves-light white lighten-4 z-depth-2">
                 <a href="{% url 'homepage' %}"> Play Again</a>

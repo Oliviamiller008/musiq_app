@@ -5,14 +5,14 @@ from spotipy.oauth2 import SpotifyOAuth
 from spotipy import util
 import webbrowser
 
-count = 0;
+
 client_id = 'd7152a4d370b484c9635c7ad12ccfde2' #given at registration of application
 client_secret = 'e5e56c343d9d495d9063511aa8ece62d' 
-redirect_uri = 'http://127.0.0.1:8000/endingpage/' #where user gets directed to after login
+redirect_uri = 'http://127.0.0.1:8000/question1/' #where user gets directed to after login
 response_type = "code" #how to know if the request went through or if an error occured
 scope = 'playlist-modify-public' #what type of authorization is given
 auth_manager = spotipy.oauth2.SpotifyOAuth(scope=scope,client_id = client_id, client_secret = client_secret,redirect_uri = redirect_uri, show_dialog=True)
-
+sp = spotipy.Spotify(auth_manager=auth_manager)
 
 
 #Dictionary of all the track ids we are using 
@@ -72,25 +72,28 @@ def authorize_user():
     # elseif(response_type == "access_denied"){
         #cancel the request
     #}
-    return sp,user_id
+    
 
-#creates a playlist called "Your MUSIQ Playlist" and returns playlist id
-def create_playlist(sp,user_id):  
+#creates a playlist called "Your MUSIQ Playlist" and returns playlist id and playlist URL
+def create_playlist():  
     playlist_name = "Your MUSIQ Playlist"
-   # user_id = sp.me()['id']
+    user_id = sp.me()['id']
     print('creating playlist')
     playlist = sp.user_playlist_create(user=user_id, name=playlist_name,public=True)
     json_string = json.dumps(playlist, indent=4)
     data = json.loads(json_string)
+    urls = data["external_urls"]
+    url = urls['spotify'] 
     playlist_id = (data["id"])
-    return playlist_id
+    return playlist_id, url
  
 #adds a song to the created playlist 
-def add_song(sp, playlist_id, track_id):
+def add_song(playlist_id, track_id):
     user_id = sp.me()['id']
     sp.user_playlist_add_tracks(user=user_id, playlist_id=playlist_id, tracks=track_id, position=None)
 
 def open_playlist(playlist_id):
+    
     results = sp.playlist(playlist_id)
     print(json.dumps(results, indent=4))
-
+# https://open.spotify.com/playlist/4azfsxtCwDwHpt4feqh61n?si=96766a40e6534697

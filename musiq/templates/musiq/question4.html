@@ -41,9 +41,15 @@
                
                 <div class="card-content">
                     <label>
-                            <input type = "radio" name="group4" value="q4op1">
-                            <span>Yellow</span>
-                            {%csrf_token%}
+                        <form action = "{% url 'question4' %}" method="POST">
+                            <center>
+                              <input type = "submit" class="waves-effect waves-light btn" name="group4" id = "q4op1" value="Yellow">
+                              {%csrf_token%}
+        
+                            </center>
+                          
+                          
+                          </form>
                     </label>
                 </div>
             
@@ -57,9 +63,15 @@
 
                 <div class="card-content">
                     <label>
-                        <input type = "radio" name="group4" value="q4op2">
-                        <span>Black</span>
-                        {%csrf_token%}
+                        <form action = "{% url 'question4' %}" method="POST">
+                            <center>
+                              <input type = "submit" class="waves-effect waves-light btn" name="group4" id = "q4op2" value="Black">
+                              {%csrf_token%}
+        
+                            </center>
+                          
+                          
+                          </form>
                     </label>
 
                 </div>
@@ -75,9 +87,15 @@
                
                 <div class="card-content">
                     <label>
-                            <input type = "radio" name="group4" value="q4op3">
-                            <span>Blue</span>
-                            {%csrf_token%}
+                        <form action = "{% url 'question4' %}" method="POST">
+                            <center>
+                              <input type = "submit" class="waves-effect waves-light btn" name="group4" id = "q4op3" value="Blue">
+                              {%csrf_token%}
+        
+                            </center>
+                          
+                          
+                          </form>
                     </label>
                 </div>
            
@@ -90,10 +108,15 @@
                
                 <div class="card-content">
                     <label>
-                        <input type = "radio" name="group4" value="q4op4">
-                        <span>Gold</span>
-                        {%csrf_token%}
-                      </form>
+                        <form action = "{% url 'question4' %}" method="POST">
+                            <center>
+                              <input type = "submit" class="waves-effect waves-light btn" name="group4" id = "q4op4" value="Gold">
+                              {%csrf_token%}
+        
+                            </center>
+                          
+                          
+                          </form>
                     </label>
                 </div>
 
